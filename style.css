@@ -1,0 +1,32 @@
+body{
+    font-size: 4px;
+    text-align: center;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.load-image{
+    width: fit-content;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    opacity: .05;
+}
+
+.load-image.show{
+    animation: slide-down 10s linear forwards;
+}
+
+@keyframes slide-down{
+    to{
+        max-height: 2000px;
+    }
+}
+
+@media only screen and (max-device-width: 400px){
+    .load-image img{
+        width: 98vw;
+    }
+}
