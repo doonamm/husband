@@ -12,7 +12,7 @@ body{
     height: auto;
     max-height: 0;
     overflow: hidden;
-    opacity: .05;
+    opacity: 1;
 }
 
 .load-image.show{
